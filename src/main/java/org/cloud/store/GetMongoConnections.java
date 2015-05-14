@@ -20,6 +20,14 @@ public class GetMongoConnections {
 	private static DB dbConnection;
 
 	private GetMongoConnections() {
+		/**
+		use this method to request mongo db connection
+		*/
+		
+//		MongoClientURI uri = new MongoClientURI(
+//		"mongodb://admin:admin@ds061360.mongolab.com:61360/mongo");
+//		connection = new MongoClient(uri);
+//		dbConnection = connection.getDB("mongo");
 
 	}
 

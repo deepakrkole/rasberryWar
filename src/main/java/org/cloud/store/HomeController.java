@@ -10,8 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,9 +26,7 @@ import com.mongodb.DBObject;
  */
 @Controller
 public class HomeController {
-	
-	//private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
+		
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -39,11 +35,11 @@ public class HomeController {
 		return "welcome";
 	}
 	
-	@RequestMapping(value = "/contactus", method = RequestMethod.GET)
-	public String contactus(Locale locale, Model model) {
-		return "contactus";
+	@RequestMapping(value = "/about", method = RequestMethod.GET)
+	public String about(Locale locale, Model model) {
+		return "about";
 	}
-	
+
 	@RequestMapping(value = "/contactForm", method = RequestMethod.POST)
 	public String contactForm(HttpServletRequest req, Locale locale) {
 		SendSMS sms =new SendSMS();
@@ -52,11 +48,11 @@ public class HomeController {
 		return "contactus";
 	}
 	
-	@RequestMapping(value = "/about", method = RequestMethod.GET)
-	public String about(Locale locale, Model model) {
-		return "about";
+	@RequestMapping(value = "/contactus", method = RequestMethod.GET)
+	public String contactus(Locale locale, Model model) {
+		return "contactus";
 	}
-	
+		
 	@SuppressWarnings("deprecation")
 	@RequestMapping(value = "/appProperties",method = RequestMethod.POST)
 	public String appProperties(HttpServletRequest req, Model model) throws Exception{
