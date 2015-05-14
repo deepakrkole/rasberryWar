@@ -26,12 +26,6 @@ public class GetMongoConnections {
 	public static DB getConnection() throws IOException {
 
 		if (dbConnection == null) {
-			/*GetCredentials credentials = GetCredentials.getInstance();
-			credentials.setCredentials();
-			String url = "mongodb://" + credentials.getUserName() + ":"
-					+ credentials.getPassword()
-					+ "@ds049171.mongolab.com:49171/yahoohackathon";*/
-			// connection=new MongoClient(new MongoClientURI(uri));
 			MongoClientURI uri = new MongoClientURI(
 					"mongodb://admin:admin@ds061360.mongolab.com:61360/mongo");
 			connection = new MongoClient(uri);
