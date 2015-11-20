@@ -38,7 +38,7 @@ public class SendSMS {
     public void sendEmail(String UserName, String emailId,String alertmessage){
 		System.out.println("Sending email to "+emailId);
 		final String sender = "cloudrasberry@gmail.com";
-		final String password = "rasberry";
+		final String password = "xxxx";
  
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
@@ -82,7 +82,7 @@ public class SendSMS {
         List<NameValuePair> params = new ArrayList<NameValuePair>();
         params.add(new BasicNameValuePair("Body", smsMessage));
         params.add(new BasicNameValuePair("To", userNumber));
-        params.add(new BasicNameValuePair("From", "+14072701082"));
+        params.add(new BasicNameValuePair("From", "+12345678"));
      
         MessageFactory messageFactory = client.getAccount().getMessageFactory();
         try {
