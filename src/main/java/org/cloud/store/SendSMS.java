@@ -32,8 +32,8 @@ import com.twilio.sdk.resource.instance.Message;
 public class SendSMS {
 	static TwilioRestClient client ;
     /* Twilio REST API version */
-    public static final String ACCOUNTSID = "ACefaca9918bcad722354f504a729611df";
-    public static final String AUTHTOKEN = "db1b2b6edbba48af871b51bdb652448f";
+    public static final String ACCOUNTSID = "xxxx";
+    public static final String AUTHTOKEN = "xxxx";
     
     public void sendEmail(String UserName, String emailId,String alertmessage){
 		System.out.println("Sending email to "+emailId);
